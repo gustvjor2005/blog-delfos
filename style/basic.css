@@ -1,0 +1,8 @@
+body{
+    max-width: 40em; /*En caso tenga textos demasiado largos*/
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 20px; /*Tamaño de letra en el cuerpo */
+    line-height: 30px; /*Tamano de espacio entre lineas */
+    background-color: azure;
+}

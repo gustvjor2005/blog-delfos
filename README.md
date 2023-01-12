@@ -106,4 +106,12 @@ curl --header "Content-Type: application/json" \
   http://localhost:8090/api/comment
 
 
+#git ssh config 
+
+ls -al ~/.ssh
+ssh-keygen -t rsa -b 4096 -C "gustvjor2005@gmail.com"
+ls -al ~/.ssh
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+cat ~/.ssh/id_rsa.pub
 

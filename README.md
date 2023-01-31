@@ -83,6 +83,9 @@ ADD COLUMN email VARCHAR(25) AFTER username;
 sudo apt update
 sudo apt install nodejs
 node -v #v12.22.9
+#install npm
+sudo apt install npm
+
 
 #install nginx
 sudo apt update

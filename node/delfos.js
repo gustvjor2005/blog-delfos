@@ -6,7 +6,7 @@ var cors = require('cors');
 const conf = {
 	     host : "localhost",
 	     user : "root",
-	     password : "P3t3123.,",
+	     password : "****",
 	     database : "delfos"
 	  };
 

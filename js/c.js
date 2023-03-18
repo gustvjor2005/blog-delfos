@@ -48,7 +48,7 @@ function loadComment(){
 
   console.log("load comment");
 
-  const fpromiseG = fetch("http://localhost:8090/api/comment", {
+  const fpromiseG = fetch("http://localhost:8091/api/comment", {
     headers: {
         'ind': objInd
     }

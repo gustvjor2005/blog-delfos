@@ -30,10 +30,9 @@
 ## Use DB
        USE delfos;
 
-##Querys       
-       # Consultas SQL
+## Querys       
 
-## Crear una tabla 'comment' con las siguientes columnas:
+### Crear una tabla 'comment' con las siguientes columnas:
 ```sql
 
 CREATE TABLE comment (
@@ -46,7 +45,7 @@ CREATE TABLE comment (
   PRIMARY KEY(id)
 );
 ```
-## Insertar un registro en la tabla 'comment':
+### Insertar un registro en la tabla 'comment':
 
 ```sql
 INSERT INTO comment (details, section, username, day) 

@@ -5,6 +5,18 @@
 -Mysql
 -Node
 
+
+## nginx
+```bash
+sudo apt-get update
+sudo apt-get install nginx
+sudo systemctl restart nginx
+sudo systemctl status nginx
+```
+
+### root
+root /var/www/html
+
 ## comandos Mysql
 
 ### instalar

@@ -1,38 +1,38 @@
 # blog-delfos
-# Pase Prod Blog
+## Pase Prod Blog
 -Creacion Workspace
 -Nginx
 -Mysql
 -Node
 
-# comandos Mysql
+## comandos Mysql
 
-## instalar
+### instalar
        sudo apt update
        sudo apt install mysql-server
        mysql --version
        sudo systemctl status mysql
        sudo mysql -u root -p
 
-## create table
+### create table
 
        ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Delfos123.,';
 
-## flush privileges;
+### flush privileges;
 
        CREATE TABLE comment (name VARCHAR(20), owner VARCHAR(20),
        species VARCHAR(20), sex CHAR(1), birth DATE, death DATE);
        
 
-## Create database
+### Create database
        CREATE DATABASE delfos;
 
-## Use DB
+### Use DB
        USE delfos;
 
-## Querys       
+### Querys       
 
-### Crear una tabla 'comment' con las siguientes columnas:
+#### Crear una tabla 'comment' con las siguientes columnas:
 ```sql
 
 CREATE TABLE comment (
@@ -45,7 +45,7 @@ CREATE TABLE comment (
   PRIMARY KEY(id)
 );
 ```
-### Insertar un registro en la tabla 'comment':
+#### Insertar un registro en la tabla 'comment':
 
 ```sql
 INSERT INTO comment (details, section, username, day) 
@@ -57,21 +57,21 @@ VALUES (
 );
 ```
 
-## Referencias
+### Referencias
 
-### BD Mysql
+#### BD Mysql
 - [Documentación oficial de NGINX](https://docs.nginx.com/nginx/admin-guide/web-server/web-server/)
 - [Guía para utilizar NGINX en sitios web estáticos](https://jgefroh.medium.com/a-guide-to-using-nginx-for-static-websites-d96a9d034940)
 - [Definición de IIFE en Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Glossary/IIFE)
 
-### Diferencia entre expresión y sentencia
+#### Diferencia entre expresión y sentencia
 - [Explicación de la diferencia entre expresión y sentencia](https://www.onemathematicalcat.org/algebra_book/online_problems/exp_vs_sen.htm)
 
-### JavaScript Asíncrono
+#### JavaScript Asíncrono
 - [Introducción a la programación asíncrona en JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing)
 
-### Promesas
+#### Promesas
 - [Guía sobre el uso de promesas en JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises)
 
-### Proyecto
+#### Proyecto
 - [Tutorial para crear una API REST con Node.js y SQL Server](https://www.telerik.com/blogs/step-by-step-create-node-js-rest-api-sql-server-database)

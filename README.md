@@ -1,4 +1,4 @@
-# blog-delfos
+# blog-delfos v2
 ## Pase Prod Blog
 -Creacion Workspace
 -Nginx

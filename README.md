@@ -30,12 +30,6 @@ root /var/www/html
 
        ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Delfos123.,';
 
-### flush privileges;
-
-       CREATE TABLE comment (name VARCHAR(20), owner VARCHAR(20),
-       species VARCHAR(20), sex CHAR(1), birth DATE, death DATE);
-       
-
 ### Create database
        CREATE DATABASE delfos;
 

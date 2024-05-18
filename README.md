@@ -14,6 +14,13 @@ sudo systemctl restart nginx
 sudo systemctl status nginx
 ```
 
+add this config to domain config
+```bash
+location = /comment {
+		proxy_pass http://127.0.0.1:8091/api/comment;
+	}
+
+```
 ### root
 root /var/www/html
 
@@ -63,7 +70,14 @@ VALUES (
 );
 ```
 
+
+
 ### Referencias
+
+
+### AWS
+
+- [Elastic IP]https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html
 
 #### BD Mysql
 - [Documentación oficial de NGINX](https://docs.nginx.com/nginx/admin-guide/web-server/web-server/)

@@ -6,14 +6,13 @@ loadComment();
 fobj.addEventListener('submit', (event) => {
 
   event.preventDefault();
-
   var objUser = document.getElementById("namef").value;
   var objEmail = document.getElementById("emailf").value;
   var objComment = document.getElementById("comment").value;
  
   dataJson = {"username":objUser,"section":objInd, "details":objComment, "email": objEmail};
 
-  const fpromiseP = fetch("http://localhost:8090/api/comment", {
+  const fpromiseP = fetch("/comment", {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json'
@@ -48,7 +47,7 @@ function loadComment(){
 
   console.log("load comment");
 
-  const fpromiseG = fetch("http://localhost:8091/api/comment", {
+  const fpromiseG = fetch("/comment", {
     headers: {
         'ind': objInd
     }

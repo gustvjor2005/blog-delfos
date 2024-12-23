@@ -1,17 +1,36 @@
 # blog-delfos v2
-## Pase Prod Blog
--Creacion Workspace
--Nginx
--Mysql
--Node
 
-
-## nginx
+## Install && Config
 ```bash
+#nginx
 sudo apt-get update
 sudo apt-get install nginx
 sudo systemctl restart nginx
 sudo systemctl status nginx
+
+#firewall 
+sudo ufw allow 'Nginx Full'
+sudo ufw reload
+
+#configure nginx
+cd /etc/nginx/
+sudo cp nginx.conf nginx.conf.backup
+cd /etc/nginx/sites-available/
+sudo vim odin.com
+       server {
+              #change port of nginx default config to 90
+              listen 80;
+              server_name odin.com;
+              root /var/www/odin.com/html/;
+              index gcd.html;
+       }
+sudo ln -s /etc/nginx/sites-available/odin.com /etc/nginx/sites-enabled/
+sudo mkdir -p /var/www/odin.com/html
+sudo chown -R $USER:$USER /var/www/odin.com/html
+sudo chmod -R 755 /var/www
+
+#copy gdc.html and other files to /var/www/odin.com/html/ directory
+
 ```
 
 add this config to domain config
@@ -21,12 +40,10 @@ location = /comment {
 	}
 
 ```
-### root
-root /var/www/html
 
 ## comandos Mysql
 
-### instalar
+### install
        sudo apt update
        sudo apt install mysql-server
        mysql --version

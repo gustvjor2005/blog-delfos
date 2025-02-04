@@ -1,10 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Valkyrie');
+
 body{
     max-width: 40em; /*En caso tenga textos demasiado largos*/
     margin: 0 auto;
     padding: 5px;
     font-size: 20px; /*Tamaño de letra en el cuerpo */
+	font-family: 'Merriweather', Georgia, serif;
+	color: #2c3e50;
+	background: hsl(0, 0%, 100%);
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	letter-spacing: 0.3px;
     line-height: 30px; /*Tamano de espacio entre lineas */
-    background-color: aliceblue;   
+    background-color: rgb(255, 255, 255);   
 }
 
 h1,h2,h3,dt,small,.small,dl#tweetlist dt,footer,label,#commentlist ol li cite,div.blogparent,input[type="submit"],figcaption{
@@ -14,7 +23,7 @@ h1,h2,h3,dt,small,.small,dl#tweetlist dt,footer,label,#commentlist ol li cite,di
 }
 
 span.url {
-	font-family:Georgia,serif;
+	font-family: 'Roboto Mono', 'Consolas', 'Monaco', 'Courier New', monospace;
 }
 
 small,.small,footer,dl#tweetlist dt,figcaption{

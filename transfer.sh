@@ -12,6 +12,7 @@ REMOTE_DIR="/var/www/gchoque.de/html/"
 scp -i "$KEY" gcd.html $USER@$HOST:$REMOTE_DIR
 scp -i "$KEY" -r blog $USER@$HOST:$REMOTE_DIR
 scp -i "$KEY" -r fa $USER@$HOST:$REMOTE_DIR
+scp -i "$KEY" -r js $USER@$HOST:$REMOTE_DIR
 
 echo "All files have been uploaded!"
 

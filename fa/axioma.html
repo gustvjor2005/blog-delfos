@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Axioma | Gustavo Choque</title>
+    <link rel="stylesheet" href="/style/basic.css" />
+  </head>
+
+  <body>
+    <section id="01">
+      <h1>
+        <a href="/">Gustavo Choque Dextre</a>
+      </h1>
+    </section>
+    <main>
+      <article>
+        <header>
+          <div class="blogparent"><a href="/blog/blog.html">Artículos</a></div>
+          <h1>Axioma</h1>
+          <small>28-02-2025</small>
+        </header>
+        <p>          
+          Un axioma es un concepto que no tiene demostración en el campo de las matemáticas,
+          mientras que un teorema es algo demostrable. 
+          Por ejemplo, el Teorema de Pitágoras. 
+          Ese dichoso teorema sí se puede demostrar...
+          <br />
+          En programación, se podría decir que también existen axiomas: 
+          aquellos principios básicos, ideas fundamentales que sostienen un 
+          paradigma de programación. 
+          Por ejemplo, la herencia se podría considerar un axioma del paradigma 
+          orientado a objetos. ¿Acaso la herencia se puede demostrar?
+          <br />
+          Por otro lado, los teoremas son construcciones que nos ayudan 
+          a ser más eficientes al momento de solucionar problemas. 
+          Son como fórmulas reutilizables...
+          Dejo a consideración si un patrón de diseño puede ser 
+          la contraparte de un teorema en el mundo de la programación.
+          <br />
+          En el mundo de la ingeniería, 
+          este tipo de ideas se forja en base a la aplicación de estos
+          conceptos en el día a día. La práctica hace al maestro.
+          <br /><br />
+
+          Ah, me olvidaba, una pequeña observación más.
+          <br />
+          En la implementación, 
+          después de haber definido el patrón a usar para trabajar,
+          después de definir la estructura de capas de este patrón de arquitectura, 
+          por ejemplo, MVC, después, 
+          todo eso se ve materializado en la estructura de tu proyecto, 
+          en la estructura de carpetas de tu proyecto, 
+          en la distribución de paquetes, 
+          que no son más que un conjunto clasificado de directorios.
+          <br />
+          Todo esto es para tener un orden de las cosas. 
+          Es como saber dónde poner las medias, 
+          o los polos y pantalones en las gavetas del armario.
+          Todo esto, al final, trata de tener un orden de las cosas...
+    <footer>
+        Copyright &#169; 2025 <a href="/">Gustavo Choque</a>.        
+      </footer>
+    </article>
+    <header>
+      <h1>Comentarios:</h1>
+    </header>
+    <form action="/comment" method="post" id="f1">
+      <label for="namef">Nombre</label>
+      <input type="text" name="namef" id="namef" required>
+      <label for="emailf">Correo &nbsp;
+        <span class="small"> (Esta información se mantendrá privada)</span>
+      </label>
+      <input type="email" name="emailf" id="emailf" required>
+      <label for="comment">Comentario</label>
+      <textarea name="comment" id="comment" cols="80" rows="10" required></textarea>
+      <br>
+      <input type="hidden" name="uri" id="uri" value="fa">
+      <input name="submit" type="submit" class="submit" value="Enviar comentario">
+    </form>
+    <header>
+
+    <div id="comments"></div>
+  </main>
+  <div>
+    <ol id="commentlist">
+    </ol>
+  </div>
+    <script src="/js/c.js"></script>
+</body>

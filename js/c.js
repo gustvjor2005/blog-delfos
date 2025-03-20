@@ -14,7 +14,7 @@ fobj.addEventListener("submit", (event) => {
     section: objInd,
     details: objComment,
     email: objEmail,
-  };  
+  };
 
   saveComment(dataJson);
 });
@@ -43,7 +43,7 @@ async function loadComment() {
   try {
     console.log("loading comment");
 
-    const fpromiseG = await fetch("/comment", {
+    const fpromiseG = await fetch("http://54.94.176.119:8091/api/comment", {
       headers: {
         ind: objInd,
       },
